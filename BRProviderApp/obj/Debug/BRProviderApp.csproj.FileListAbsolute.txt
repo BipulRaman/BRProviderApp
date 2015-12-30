@@ -1,0 +1,4 @@
+C:\Users\bipul.raman\Documents\Visual Studio 2013\Projects\BRProviderApp\BRProviderApp\bin\Debug\BRProviderApp.dll.config
+C:\Users\bipul.raman\Documents\Visual Studio 2013\Projects\BRProviderApp\BRProviderApp\bin\Debug\BRProviderApp.pdb
+C:\Users\bipul.raman\Documents\Visual Studio 2013\Projects\BRProviderApp\BRProviderApp\obj\Debug\BRProviderApp.dll
+C:\Users\bipul.raman\Documents\Visual Studio 2013\Projects\BRProviderApp\BRProviderApp\obj\Debug\BRProviderApp.pdb

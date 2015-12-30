@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "App";
+}
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<script type="text/javascript" src="~/Scripts/Applogic.js"></script>
+
+<span><b>Select Task to perform: </b></span>
+<br /><br />
+<select id="taskOption" onchange="SelectingOption();">
+    <option selected="selected" disabled="disabled">--Select--</option>
+    <option value="new">New Bill</option>
+    <option value="edit">Change Status</option>
+    <option value="info">Bill Details</option>
+</select>
+<br /><br />
+<div id="getDetailsInputs">
+    <div>
+        <span>Bill no: </span><input id="ipBillNo" type="text" />
+        <button id="btnExe" type="button">Get Details</button>
+    </div>
+</div>
+<br />
+<div id="newBill">
+    <div><b>Bill no : </b><input id="tbBillNo" type="text" /></div><br />
+    <div><b>Title : </b><input id="tbBillTitle" type="text" /></div><br />
+    <button id="btnBillEntry" type="button">Submit Details</button>
+</div>
+
+<div id="getDetails"></div>
+<br />
+<div id="changeStatus">
+    <span><b>Select new status :</b></span>
+    <select id="selectStatus" onchange="EditBillData();"></select>
+</div>

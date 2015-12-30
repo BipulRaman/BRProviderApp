@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script type="text/javascript" src="~/Scripts/money.min.js"></script>
+<script type="text/javascript" src="~/Scripts/App.js"></script>
+<div>
+    <h3>Welcome <label id="lblUserName"></label></h3>
+</div>
+<hr class="full-line">
+<div>
+    <span class="sbmenu" onclick="DashboardClick();">Dashboard</span>
+    <span class="sbmenu" onclick="AddExpenseClick();">Add Expense</span>
+    <span class="sbmenu" onclick="UpdateExpensesClick();">Update Expense</span>
+</div>
+<hr class="full-line">
+<div id="Dashboard">
+    <span>Employee ID:</span><label id="lblEmpId">123456</label><br />
+    <span>Designation: </span><label id="lblDesignation">Sharepoint Developer</label><br />
+    <span>Base Currency: </span><label id="lblBaseCurrency">INR</label><br />
+    <span>Location: </span><label id="lblBaseCurrency">Bangalore, India</label><br />
+    <hr align="left" class="line">
+    <span>Recently Approved Expenses: </span><br />
+    <hr align="left" class="line">
+    <div id="ApprovedExpenses"></div>
+</div>
+<div id="BeforeAdd">
+    <form id="Addform" class="form" onsubmit="SubmitAdd();">
+        <label id="Expid" style="display:none"></label>
+        <span>Expense Title : </span><input id="txtExpenseTitle" type="text" required><br />
+        <span>Expense Type : </span>
+        <select id="ddlExpenseType">
+            <option selected="selected" disabled="disabled">--Select--</option>
+            <option value="Other">Other</option>
+            <option value="Conferences & Seminar">Conferences & Seminar</option>
+            <option value="Client Meeting">Client Meeting</option>
+            <option value="Business Trip">Business Trip</option>
+            <option value="Travel">Travel</option>
+            <option value="Accomodation">Accomodation</option>
+            <option value="Fooding">Fooding</option>
+        </select><br />
+        <span>Expense Date : </span><input id="txtExpenseDate" type="text" required><br />
+        <span>Bill No : </span><input id="txtBillNo" type="text" required><br />
+        <span>Bill Amount : </span><input id="txtBillAmount" type="text" required><br />
+        <span>Bill currency : </span>
+        <select id="ddlBillcurrency">
+            <option selected="selected" disabled="disabled">--Select--</option>            
+            <option value="USD">US Doller ($)</option>
+            <option value="GBP">Pound (&pound;)</option>
+            <option value="AUD">Australian Doller (&yen;)</option>
+            <option value="EUR">Euro (&euro;)</option>
+            <option value="INR">Indian Rupee (&#x20B9;)</option>
+        </select><br />
+        <span>Expense Location : </span><input id="txtExpLocation" type="text" required><br />
+        <span>Merchant Details : </span><input id="txtMerDetail" type="text" required><br />
+        <span>Justification : </span><input id="txtJustification" type="text" required><br /><br />
+        <input id="btnAddSubmit" type="submit" value="Submit">
+        @*<input id="btnAddSubmit" type="button" onclick="CurrencyExchangeRate();" value="TEST">*@
+        <input id="btnUpdate" type="button" onclick="SubmitUpdate();" value="Update">
+    </form>
+</div>
+<div id="AfterAdd">
+    <label id="lblAddSubmitMessage"></label><br /><br />    
+    <span class="submenu" onclick="ReAdd();">Click here to add another Expense!</span>
+</div>
+<div id="PendingExpenses"></div>

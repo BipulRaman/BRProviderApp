@@ -1,0 +1,58 @@
+﻿
+body {
+    font-family: Calibri;
+}
+
+.sbmenu {
+    margin-right: 20px;
+    font-weight: bold !important;
+    font-family: Calibri;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form span {
+    line-height: 25px;
+}
+
+.entries {
+    line-height: 25px;
+    margin-right: 10px;
+    width: 80px;
+}
+
+.line {
+    width: 50%;
+    border-top: dashed 1px;
+}
+
+.full-line {
+    border-top: dashed 1px;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.mr-lt {
+    margin-left: 20px;
+}
+
+.tbl {
+    width: 50%;
+}
+
+.row1 {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.cell1 {
+    width: 25px;
+}
+
+table, td, th {
+    border: 1px dotted black;
+}

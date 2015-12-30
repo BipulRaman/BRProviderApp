@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRProviderApp", "BRProviderApp\BRProviderApp.csproj", "{23543633-B244-49BB-973C-91A12F8A8460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRProviderAppWeb", "BRProviderAppWeb\BRProviderAppWeb.csproj", "{E5697221-64FC-479B-81F5-86E54390B7FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23543633-B244-49BB-973C-91A12F8A8460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23543633-B244-49BB-973C-91A12F8A8460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23543633-B244-49BB-973C-91A12F8A8460}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{23543633-B244-49BB-973C-91A12F8A8460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23543633-B244-49BB-973C-91A12F8A8460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23543633-B244-49BB-973C-91A12F8A8460}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E5697221-64FC-479B-81F5-86E54390B7FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5697221-64FC-479B-81F5-86E54390B7FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5697221-64FC-479B-81F5-86E54390B7FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5697221-64FC-479B-81F5-86E54390B7FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
